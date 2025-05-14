@@ -55,9 +55,10 @@ salguard-insurance/
 - ✅ **Cross-page navigation**
 - ✅ **Minimalist and professional theme**
 
----
+---Future Improvements
+🛠️ Still needs work, lots of UI refining and adjustments.
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 1. **Clone the repository**
 
