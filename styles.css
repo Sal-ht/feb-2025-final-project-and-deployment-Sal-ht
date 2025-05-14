@@ -1,0 +1,392 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f0f4f8, #d9e4f5);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e3a5f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f9c74f;
+}
+
+/* Hero Section */
+.hero {
+/* Optional: Add a dark overlay to improve text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Ensure hero content sits above the overlay */
+.hero .hero-grid,
+.hero .hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* Background image for the entire hero section */
+
+  background: url('images/insur.jpg') center center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Generic Sections */
+section {
+  padding: 4rem 2rem;
+  flex: 1;
+}
+
+/* Info Cards */
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.info-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  flex: 1 1 350px;
+  max-width: 500px;
+}
+
+.info-card h2 {
+  margin-bottom: 1rem;
+}
+
+.info-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.info-card button {
+  margin-top: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.7rem 1.5rem;
+  background-color: #ffb703;
+  color: #003049;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 0.5rem 0;
+}
+
+button:hover {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.2s ease-in-out;
+}
+
+.hover-button:hover {
+  background-color: #2ecc71; /* Green */
+  transform: scale(1.1);   /* Slight zoom-in */
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Forms */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Info Section */
+.info-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.info-card {
+  background-color: #eaf4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+  margin-bottom: 1rem;
+}
+
+/* Hover Button Demo */
+#hoverBtn:hover {
+  background-color: #90e0ef;
+}
+
+/* Gallery */
+.gallery {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+/* Accordion */
+.accordion {
+  padding: 2rem;
+}
+
+.accordion h2 {
+  margin-bottom: 1rem;
+}
+
+.accordion-toggle {
+  display: block;
+  background: #ccc;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background: #f9f9f9;
+  margin-bottom: 1rem;
+}
+
+/* Keyboard Detection */
+.keyboard {
+  padding: 2rem;
+  text-align: center;
+}
+
+.keyboard input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#keyDisplay {
+  font-weight: bold;
+}
+
+/* Hidden Message */
+.hidden {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #f9c74f;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+/* Dark Mode */ 
+/* Animation Triggers */
+.fade-in,
+.slide-in-left {
+  opacity: 0;
+  transform: translateY(20px); /* Default fade uses vertical shift */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.in-view.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.in-view.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Optional: Slide in from left */
+.slide-in-left {
+  transform: translateX(-40px);
+}
+
