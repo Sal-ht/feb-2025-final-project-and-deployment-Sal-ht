@@ -67,4 +67,4 @@ git clone https://github.com/your-username/salguard-insurance.git
 cd salguard-insurance
  or 
 
-View live by clicking this link:  
+View live by clicking this link:  https://salguardinsurance.netlify.app/
