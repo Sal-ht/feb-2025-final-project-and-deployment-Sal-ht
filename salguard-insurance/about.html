@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SalGuard | About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SalGuard</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="info-section fade-in" id="about">
+    <div class="info-card slide-in-left">
+      <h2>About SalGuard</h2>
+      <p>We simplify insurance with digital-first solutions. Powered by AI. Backed by people.</p>
+      <button onclick="highlightAbout()">Why Choose Us?</button>
+    </div>
+  </section>
+
+   <!-- Image Gallery -->
+  <section class="gallery fade-in">
+    <h2>Explore Our Visuals</h2>
+    <img id="galleryImg" src="images/insur.jpg" alt="Gallery Image">
+    <button id="nextImg">Next Image</button>
+  </section>
+
+  <!-- Accordion FAQ -->
+  <section class="accordion fade-in">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion-item">
+      <button class="accordion-toggle">What is SalGuard?</button>
+      <div class="accordion-content">SalGuard is a digital-first insurance platform for all your needs.</div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-toggle">How do I file a claim?</button>
+      <div class="accordion-content">You can file claims via our mobile app or website in under 5 minutes.</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 SalGuard Insurance</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
